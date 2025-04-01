@@ -1,0 +1,119 @@
+/* ---------- Reset general ---------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Contenedor principal ---------- */
+.container-app {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ---------- Títulos ---------- */
+h1, h2, h3 {
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Botones ---------- */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* ---------- Inputs ---------- */
+input, select, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---------- Enlaces ---------- */
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Tablas ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* ---------- MENÚ HAMBURGUESA Y RESPONSIVE ---------- */
+.menu-toggle {
+  display: none;
+}
+
+.menu-horizontal {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-sidebar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+  }
+
+  .menu-horizontal {
+    display: none;
+  }
+
+  .menu-sidebar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background: #111;
+    padding: 1rem 0;
+    display: none;
+    flex-direction: column;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+
+  .menu-sidebar.abierto {
+    display: flex;
+  }
+}
