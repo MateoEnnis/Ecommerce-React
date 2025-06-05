@@ -57,8 +57,8 @@ function Header() {
 
 // Estilos
 const headerStyle = {
-  background: "#222",
-  color: "white",
+  background: "var(--header-bg)",
+  color: "#fff",
   padding: "1rem 2rem",
   position: "relative",
   zIndex: 1000
@@ -72,9 +72,9 @@ const topBarStyle = {
 };
 
 const carritoBtn = {
-  background: "transparent",
-  color: "white",
-  border: "1px solid white",
+  background: "var(--button-bg)",
+  color: "#fff",
+  border: "none",
   padding: "0.5rem 1rem",
   borderRadius: "5px",
   cursor: "pointer"
@@ -82,7 +82,7 @@ const carritoBtn = {
 
 const hamburguesaBtn = {
   background: "transparent",
-  color: "white",
+  color: "#fff",
   border: "none",
   fontSize: "1.5rem",
   cursor: "pointer",
@@ -90,7 +90,7 @@ const hamburguesaBtn = {
 };
 
 const linkStyle = {
-  color: "white",
+  color: "#fff",
   textDecoration: "none",
   padding: "0.8rem 1rem",
   display: "block"

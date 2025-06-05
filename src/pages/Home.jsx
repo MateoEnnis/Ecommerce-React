@@ -52,7 +52,7 @@ function Home() {
           textAlign: "center",
         }}
       >
-        <h2 style={{ marginBottom: "1rem", color: "#111" }}>Sobre Nosotros</h2>
+        <h2 style={{ marginBottom: "1rem", color: "var(--secondary-color)" }}>Sobre Nosotros</h2>
         <p style={{ fontSize: "1.1rem", color: "#444", lineHeight: "1.6" }}>
           En <strong>Buen Quilate</strong>, creamos piezas únicas y elegantes para aquellos que aprecian la belleza y la perfección.
           Con más de 20 años de experiencia en el mercado, nos enorgullece ofrecer diseños exclusivos y materiales de la más alta calidad.
@@ -63,7 +63,7 @@ function Home() {
         </p>
       </section>
 
-      <h2 style={{ textAlign: "center" }}>Productos</h2>
+      <h2 style={{ textAlign: "center", color: "var(--secondary-color)" }}>Productos</h2>
 
       <div
         style={{
@@ -100,7 +100,7 @@ function Home() {
                 marginBottom: "1rem"
               }}
             />
-            <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#111" }}>{producto.nombre}</h3>
+            <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "var(--secondary-color)" }}>{producto.nombre}</h3>
             <p style={{ margin: "0 0 0.5rem", color: "#555" }}><strong>Precio:</strong> ${producto.precio}</p>
             <p style={{ fontSize: "0.9rem", color: "#666", marginBottom: "1rem" }}>{producto.descripcion}</p>
             <button onClick={() => agregarAlCarrito(producto)} style={{ marginBottom: "0.5rem" }}>
@@ -157,7 +157,7 @@ const cardVentaja = {
 
 const cardTitulo = {
   fontSize: "1.2rem",
-  color: "#111",
+  color: "var(--secondary-color)",
   marginBottom: "0.5rem"
 };
 

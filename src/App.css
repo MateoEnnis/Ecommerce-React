@@ -1,8 +1,8 @@
 /* ---------- Reset general ---------- */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
@@ -26,14 +26,14 @@ button {
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 4px;
-  background-color: #333;
-  color: white;
+  background-color: var(--button-bg);
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: var(--button-hover-bg);
 }
 
 /* ---------- Inputs ---------- */
@@ -48,11 +48,12 @@ input, select, textarea {
 /* ---------- Enlaces ---------- */
 a {
   text-decoration: none;
-  color: #0077cc;
+  color: var(--primary-color);
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--button-hover-bg);
 }
 
 /* ---------- Tablas ---------- */
@@ -69,7 +70,7 @@ th, td {
 
 /* ---------- Footer ---------- */
 footer {
-  background: #222;
+  background: var(--footer-bg);
   color: #fff;
   padding: 2rem;
   text-align: center;
@@ -105,7 +106,7 @@ footer {
     top: 100%;
     left: 0;
     width: 220px;
-    background: #111;
+    background: var(--secondary-color);
     padding: 1rem 0;
     display: none;
     flex-direction: column;
