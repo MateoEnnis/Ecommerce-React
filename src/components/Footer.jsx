@@ -34,7 +34,7 @@ function Footer() {
 
 // 🖌️ Estilos en línea
 const footerStyle = {
-  background: "#222",
+  background: "var(--footer-bg)",
   color: "#fff",
   padding: "2rem 1rem",
   display: "flex",

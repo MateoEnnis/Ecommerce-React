@@ -62,7 +62,7 @@ function Detalle() {
         onClick={agregarAlCarrito}
         style={{
           padding: "0.75rem",
-          backgroundColor: "#333",
+          backgroundColor: "var(--button-bg)",
           color: "#fff",
           border: "none",
           borderRadius: "6px",

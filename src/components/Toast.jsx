@@ -4,7 +4,7 @@ function Toast({ mensaje }) {
         position: "fixed",
         bottom: "1rem",
         right: "1rem",
-        background: "#333",
+        background: "var(--secondary-color)",
         color: "#fff",
         padding: "0.8rem 1.2rem",
         borderRadius: "8px",
